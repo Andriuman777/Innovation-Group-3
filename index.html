@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acero Barber Co. — Barbería Profesional</title>
+<meta name="description" content="Acero Barber Co. Cortes clásicos y modernos, afeitado tradicional y cuidado de barba. Reserva tu cita en línea.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Bootstrap: componentes de formulario; la identidad visual sigue en style.css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome (iconos) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS - Animate On Scroll (animaciones de desplazamiento) -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="icon" type="image/png" href="images/logo/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ BARRA DE PROGRESO DE SCROLL ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader-blade"></div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="brand">
+      <img src="images/logo/logo.png" alt="Acero Barber Co." class="brand__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+      <span class="brand__fallback"><i class="fa-solid fa-scissors"></i></span>
+      <span class="brand__name">ACERO<span>BARBER CO.</span></span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#equipo" class="nav__link">Barberos</a></li>
+        <li><a href="#galeria" class="nav__link">Galería</a></li>
+        <li><a href="#videos" class="nav__link">Videos</a></li>
+        <li><a href="#opiniones" class="nav__link">Opiniones</a></li>
+        <li><a href="#ubicacion" class="nav__link">Ubicación</a></li>
+      </ul>
+      <a href="#reservar" class="btn btn--gold nav__cta">Reservar cita</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MENU MOBILE OVERLAY ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#inicio" class="mobile-link">Inicio</a></li>
+    <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+    <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+    <li><a href="#equipo" class="mobile-link">Barberos</a></li>
+    <li><a href="#galeria" class="mobile-link">Galería</a></li>
+    <li><a href="#videos" class="mobile-link">Videos</a></li>
+    <li><a href="#opiniones" class="mobile-link">Opiniones</a></li>
+    <li><a href="#ubicacion" class="mobile-link">Ubicación</a></li>
+  </ul>
+  <a href="#reservar" class="btn btn--gold mobile-link">Reservar cita</a>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" style="background-image:url('images/gallery/barberia-equipo.jpg')"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="eyebrow" data-aos="fade-up">Cali · Reserva por WhatsApp</p>
+      <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+        NO ES SOLO UN CORTE.<br><span class="text-gold">ES TU FIRMA.</span>
+      </h1>
+      <p class="hero__text" data-aos="fade-up" data-aos-delay="200">
+        En Acero el estilo se afila en los detalles: conversamos sobre lo que buscas, elegimos
+        el servicio y cuidamos el acabado contigo. Desde un corte preciso hasta el cuidado de barba.
+      </p>
+      <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="#reservar" class="btn btn--gold">Reservar cita</a>
+        <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+      </div>
+    </div>
+    <a href="#nosotros" class="scroll-cue" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section class="about" id="nosotros">
+    <div class="container about__grid">
+      <div class="about__media" data-aos="fade-right">
+        <img src="images/gallery/barberia-interior-01.jpg" alt="Estación de trabajo de una barbería" loading="lazy">
+        <div class="about__badge">
+          <span class="about__badge-num">Un corte</span>
+          <span class="about__badge-label">a tu estilo</span>
+        </div>
+      </div>
+      <div class="about__content" data-aos="fade-left">
+      <p class="eyebrow">El ritual empieza aquí</p>
+      <h2 class="section-title">TÉCNICA CON<br>INTENCIÓN</h2>
+        <div class="razor-divider"></div>
+        <p class="about__text">
+        En Acero, cada servicio empieza por lo que buscas y termina en los detalles del acabado.
+        Elige tu servicio, cuéntanos qué tienes en mente y coordinamos tu visita directamente contigo.
+        </p>
+        <ul class="about__list">
+        <li><i class="fa-solid fa-check"></i> Cortes, afeitado y cuidado de barba</li>
+        <li><i class="fa-solid fa-check"></i> Elige servicio y barbero de preferencia</li>
+        <li><i class="fa-solid fa-check"></i> Consulta los precios antes de solicitar tu cita</li>
+        <li><i class="fa-solid fa-check"></i> Coordinamos y confirmamos tu solicitud por WhatsApp</li>
+        </ul>
+        <div class="stats-row">
+        <div class="stat"><span class="stat__num">CORTE</span><span class="stat__label">Clásico y actual</span></div>
+        <div class="stat"><span class="stat__num">BARBA</span><span class="stat__label">Perfilado y diseño</span></div>
+        <div class="stat"><span class="stat__num">CITA</span><span class="stat__label">Solicitud por WhatsApp</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIA "DISCOVER OUR WORK" ============ -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Descubre</p>
+        <h2 class="section-title">NUESTRO TRABAJO</h2>
+        <div class="razor-divider razor-divider--center"></div>
+        <p class="section-sub">Imágenes de referencia. Reemplázalas por fotos propias para mostrar el equipo y el espacio reales de Acero.</p>
+      </div>
+    </div>
+    <div class="gallery__grid" id="galleryGrid">
+      <!-- Las imágenes se inyectan desde js/config.js -->
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS Y PRECIOS ============ -->
+  <section class="pricing" id="servicios">
+    <div class="container pricing__grid">
+      <div class="pricing__content" data-aos="fade-right">
+        <p class="eyebrow">Lista de precios</p>
+        <h2 class="section-title">NUESTROS <span class="text-gold">PRECIOS</span></h2>
+        <div class="razor-divider"></div>
+        <p class="pricing__intro">
+          Nuestro catálogo de servicios cubre desde el corte clásico hasta el cuidado facial
+          completo, siempre con navaja, toalla caliente y productos de calidad.
+        </p>
+
+        <ul class="price-list">
+          <li class="price-item"><span>Corte clásico</span><span class="dots"></span><span class="price">$40.000</span></li>
+          <li class="price-item"><span>Afeitado con navaja</span><span class="dots"></span><span class="price">$35.000</span></li>
+          <li class="price-item"><span>Corte + Afeitado</span><span class="dots"></span><span class="price">$70.000</span></li>
+          <li class="price-item"><span>Perfilado de barba</span><span class="dots"></span><span class="price">$15.000</span></li>
+          <li class="price-item"><span>Diseño / línea de barba</span><span class="dots"></span><span class="price">$20.000</span></li>
+          <li class="price-item"><span>Corte infantil</span><span class="dots"></span><span class="price">$30.000</span></li>
+        </ul>
+        <a href="#reservar" class="btn btn--outline">Ver todos los precios</a>
+      </div>
+
+      <div class="pricing__side" data-aos="fade-left">
+        <div class="pricing__image">
+          <img src="images/gallery/barberia-interior-01.jpg" alt="Estación de trabajo de una barbería" loading="lazy">
+        </div>
+
+        <div class="testimonial-card" id="testimonialCard">
+          <p class="eyebrow">Lo que dicen los clientes</p>
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testimonial-text" id="testimonialText">Compartiremos aquí opiniones reales de nuestros clientes.</p>
+          <div class="testimonial-author" id="testimonialAuthor"></div>
+          <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EQUIPO / BARBEROS ============ -->
+  <section class="team" id="equipo">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Conoce al</p>
+        <h2 class="section-title">EQUIPO</h2>
+        <div class="razor-divider razor-divider--center"></div>
+        <p class="section-sub">Tres profesionales, un mismo estándar: precisión en cada línea.</p>
+      </div>
+      <div class="team__grid" id="teamGrid">
+        <!-- Las tarjetas de barberos se inyectan desde js/config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS ============ -->
+  <section class="videos" id="videos">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">En movimiento</p>
+        <h2 class="section-title">NUESTROS <span class="text-gold">VIDEOS</span></h2>
+        <div class="razor-divider razor-divider--center"></div>
+        <p class="section-sub">Mira a nuestros barberos trabajando y recorre la barbería por dentro.</p>
+      </div>
+      <div class="videos__grid" id="videosGrid">
+        <!-- Los videos de YouTube se inyectan desde js/config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVAR CITA ============ -->
+  <section class="booking" id="reservar">
+    <div class="container booking__grid">
+      <div class="booking__info" data-aos="fade-right">
+        <p class="eyebrow">Sin filas, sin esperas</p>
+        <h2 class="section-title">RESERVA TU<br><span class="text-gold">CITA</span></h2>
+        <div class="razor-divider"></div>
+        <p class="booking__text">
+          Completa el formulario con tus datos, elige el servicio, el barbero y el horario que
+          prefieras. Al confirmar, se abrirá WhatsApp con tu solicitud lista para enviar.
+        </p>
+        <ul class="booking__hours">
+          <li><span>Lunes – Viernes</span><span>9:00 am – 8:00 pm</span></li>
+          <li><span>Sábados</span><span>9:00 am – 6:00 pm</span></li>
+          <li><span>Domingos</span><span>Cerrado</span></li>
+        </ul>
+      </div>
+
+      <form class="booking__form" id="bookingForm" data-aos="fade-left" novalidate>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="bookingName">Nombre completo</label>
+            <input class="form-control" id="bookingName" type="text" name="nombre" placeholder="Tu nombre" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ' \-]{2,80}" minlength="2" maxlength="80" autocomplete="name" title="Escribe un nombre de 2 a 80 letras." required>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="bookingPhone">Teléfono / WhatsApp</label>
+            <input class="form-control" id="bookingPhone" type="tel" name="telefono" placeholder="Ej. 300 123 4567" pattern="[0-9+\(\) .\-]{7,20}" minlength="7" maxlength="20" autocomplete="tel" title="Usa entre 7 y 20 caracteres: números, espacios, +, paréntesis, puntos o guiones." required>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="bookingService">Servicio</label>
+            <select class="form-select" id="bookingService" name="servicio" required>
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <option>Corte clásico</option>
+              <option>Afeitado con navaja</option>
+              <option>Corte + Afeitado</option>
+              <option>Perfilado de barba</option>
+              <option>Diseño / línea de barba</option>
+              <option>Corte infantil</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="barberoSelect">Barbero de preferencia</label>
+            <select class="form-select" name="barbero" id="barberoSelect" required>
+              <option value="" disabled selected>Selecciona un barbero</option>
+              <option>Cualquiera disponible</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="bookingDate">Fecha</label>
+            <input class="form-control" type="date" name="fecha" id="bookingDate" required>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="bookingTime">Hora</label>
+            <input class="form-control" type="time" name="hora" id="bookingTime" required>
+          </div>
+          <fieldset class="col-12 booking__choices">
+            <legend>¿Cómo prefieres que te contactemos?</legend>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="contactoPreferido" id="contactWhatsapp" value="WhatsApp" checked>
+              <label class="form-check-label" for="contactWhatsapp">WhatsApp</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="contactoPreferido" id="contactPhone" value="Llamada">
+              <label class="form-check-label" for="contactPhone">Llamada</label>
+            </div>
+          </fieldset>
+          <div class="col-12">
+            <div class="form-check booking__checkbox">
+              <input class="form-check-input" type="checkbox" name="primeraVisita" id="firstVisit" value="Sí">
+              <label class="form-check-label" for="firstVisit">Es mi primera visita a Acero</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="bookingMessage">Mensaje adicional (opcional)</label>
+            <textarea class="form-control" id="bookingMessage" name="mensaje" rows="3" maxlength="500" placeholder="Cuéntanos algo más sobre tu cita…"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--gold btn--wide">
+          <i class="fa-brands fa-whatsapp"></i> Confirmar y enviar por WhatsApp
+        </button>
+        <p class="booking__privacy">La solicitud se abrirá en WhatsApp y solo quedará confirmada cuando el equipo te responda.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ OPINIONES ============ -->
+  <section class="reviews" id="opiniones">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Confían en nosotros</p>
+        <h2 class="section-title">OPINIONES DE <span class="text-gold">CLIENTES</span></h2>
+        <div class="razor-divider razor-divider--center"></div>
+      </div>
+      <div class="reviews__grid" id="reviewsGrid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Se inyectan desde js/config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACION ============ -->
+  <section class="location" id="ubicacion">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Visítanos</p>
+        <h2 class="section-title">NUESTRA <span class="text-gold">UBICACIÓN</span></h2>
+        <div class="razor-divider razor-divider--center"></div>
+      </div>
+
+      <div class="location__grid">
+        <div class="location__photos" data-aos="fade-right">
+          <img src="images/location/local-01.jpg" alt="Estación de trabajo en una barbería" loading="lazy">
+          <img src="images/location/local-02.jpg" alt="Sillas y herramientas del espacio de barbería" loading="lazy">
+        </div>
+        <div class="location__info" data-aos="fade-left">
+          <ul class="location__list">
+            <li><i class="fa-solid fa-location-dot"></i><div><strong>Dirección</strong><span>Calle 10 # 20-30, Cali, Valle del Cauca</span></div></li>
+            <li><i class="fa-solid fa-phone"></i><div><strong>Teléfono</strong><span>+57 300 123 4567</span></div></li>
+            <li><i class="fa-solid fa-envelope"></i><div><strong>Correo</strong><span>contacto@acerobarber.co</span></div></li>
+            <li><i class="fa-regular fa-clock"></i><div><strong>Horario</strong><span>Lun–Vie 9am–8pm · Sáb 9am–6pm</span></div></li>
+          </ul>
+          <div class="location__map">
+            <iframe
+              src="https://www.google.com/maps?q=Cali,Valle%20del%20Cauca,Colombia&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de la barbería">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#inicio" class="brand">
+        <img src="images/logo/logo.png" alt="Acero Barber Co." class="brand__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+        <span class="brand__fallback"><i class="fa-solid fa-scissors"></i></span>
+        <span class="brand__name">ACERO<span>BARBER CO.</span></span>
+      </a>
+      <p>Cortes con oficio, actitud y navaja bien afilada. Reserva tu cita cuando quieras.</p>
+      <a class="btn btn--outline" href="#reservar">Reserva tu visita</a>
+    </div>
+    <div class="footer__col">
+      <h4>Navegación</h4>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#equipo">Barberos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#videos">Videos</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <a href="#ubicacion">Calle 10 # 20-30, Cali</a>
+      <a href="tel:+573001234567">+57 300 123 4567</a>
+      <a href="mailto:contacto@acerobarber.co">contacto@acerobarber.co</a>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> Acero Barber Co. Todos los derechos reservados.</span>
+    <span>Hecho con oficio, para Acero.</span>
+  </div>
+</footer>
+
+<!-- ============ BOTON FLOTANTE WHATSAPP + CHAT ============ -->
+<div class="whatsapp-widget" id="whatsappWidget">
+  <div class="whatsapp-chat" id="whatsappChat">
+    <div class="whatsapp-chat__header">
+      <img src="images/logo/logo.png" alt="Acero Barber Co." onerror="this.style.display='none';">
+      <div>
+        <strong>Acero Barber Co.</strong>
+        <span><i class="fa-solid fa-circle"></i> Asistente automático</span>
+      </div>
+      <button id="closeWhatsappChat" aria-label="Cerrar chat"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="whatsapp-chat__body" id="chatMessages" role="log" aria-live="polite" aria-label="Conversación con el asistente">
+      <div class="whatsapp-bubble">¡Hola! Soy el asistente de Acero. Puedo contarte los horarios, servicios, precios y cómo solicitar una cita.</div>
+      <div class="chat-suggestions" id="chatSuggestions" aria-label="Preguntas frecuentes"></div>
+    </div>
+    <form class="whatsapp-chat__form" id="chatForm">
+      <label class="visually-hidden" for="chatInput">Escribe tu pregunta</label>
+      <input id="chatInput" name="pregunta" type="text" maxlength="240" placeholder="Escribe tu pregunta…" autocomplete="off" required>
+      <button type="submit" aria-label="Enviar pregunta"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+    <div class="whatsapp-chat__footer">
+      <a href="#" id="whatsappSendBtn" target="_blank" rel="noopener noreferrer" class="whatsapp-chat__send">
+        <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+  <button class="whatsapp-fab" id="whatsappFab" aria-label="Abrir chat de WhatsApp" aria-controls="whatsappChat" aria-expanded="false">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+</div>
+
+<!-- ============ MODAL GENERICO (lightbox / bio / confirmación) ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- Botón subir arriba -->
+<button class="to-top" id="toTop" aria-label="Subir al inicio"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============ LIBRERIAS ============ -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
